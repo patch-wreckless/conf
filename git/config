@@ -1,0 +1,16 @@
+[alias]
+	br = branch
+	co = checkout
+	df = diff -w -b
+	dfc = diff --cached -w -b
+	dfcw = diff
+	dfw = diff
+	glog = log --graph
+	grlog = log --graph --pretty=reference
+	gslog = log --graph --pretty=format:'%C(auto)SHA:     %H %d%nAuthor:  %aN <%aE>%nDate:    %ad%nSubject: %s%n'
+	lcb = log -1 --pretty=format:'%b'
+	lcs = log -1 --pretty=format:'%s'
+	rlog = log --pretty=reference
+	slog = log --pretty=format:'%C(auto)SHA:     %H %d%nAuthor:  %aN <%aE>%nDate:    %ad%nSubject: %s%n'
+	st = status
+
