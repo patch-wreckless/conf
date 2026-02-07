@@ -24,7 +24,6 @@
 	st = status
 
 [core]
-    editor = nvim
     pager = delta
 
 [delta]

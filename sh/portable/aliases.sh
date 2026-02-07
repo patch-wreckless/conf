@@ -4,5 +4,7 @@ alias cargo-install='RUSTFLAGS="-C target-cpu=native -C opt-level=3" \
 alias pb=pbcopy
 alias pbp=pbpaste
 
-alias vi=nvim
+if command -v nvim > /dev/null; then
+	alias vi=nvim
+fi
 
