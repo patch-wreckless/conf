@@ -1,5 +1,7 @@
-alias cargo-install='RUSTFLAGS="-C target-cpu=native -C opt-level=3" \
-	cargo install --locked --force'
+if command -v cargo >/dev/null; then
+		alias cargo-install='RUSTFLAGS="-C target-cpu=native -C opt-level=3" \
+				cargo install --locked --force'
+fi
 
 alias pb=pbcopy
 alias pbp=pbpaste
