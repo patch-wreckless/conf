@@ -18,6 +18,9 @@
 	lcs = log -1 --pretty=format:'%s'
 	rlog = log --pretty=reference
 	slog = log --pretty=format:'%C(auto)SHA:     %H %d%nAuthor:  %aN <%aE>%nDate:    %ad%nSubject: %s%n'
+
+	showc = -c delta.side-by-side=true show
+
 	st = status
 
 [core]
