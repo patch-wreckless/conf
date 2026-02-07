@@ -1,4 +1,6 @@
-source "${0:a:h}/../sh/portable/aliases.sh"
+CONF_ROOT="$(dirname $0)/.."
+
+. "${CONF_ROOT}/sh/portable/rc.sh"
 
 alias bke="bindkey -e"
 alias bkv="bindkey -v"

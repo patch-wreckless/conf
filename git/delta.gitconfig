@@ -1,0 +1,16 @@
+[alias]
+	dfs = -c delta.side-by-side=true diff --ignore-all-space
+	dfcs = -c delta.side-by-side=true diff --cached --ignore-all-space
+	dfsw = -c delta.side-by-side=true diff
+	dfcsw = -c delta.side-by-side=true diff --cached
+
+[core]
+	pager = delta
+
+[delta]
+	dark = true
+	navigate = true
+
+[interactive]
+	diffFilter = delta --color-only
+

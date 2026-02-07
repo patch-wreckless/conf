@@ -4,12 +4,12 @@
 
 	df = diff --ignore-all-space
 	dfc = diff --cached --ignore-all-space
-	dfs = -c delta.side-by-side=true diff --ignore-all-space
-	dfcs = -c delta.side-by-side=true diff --cached --ignore-all-space
+	dfs = "!f() { echo git dfs requires delta 1>&2; }; f"
+	dfcs = "!f() { echo git dfcs requires delta 1>&2; }; f"
 	dfw = diff
 	dfcw = diff --cached
-	dfsw = -c delta.side-by-side=true diff
-	dfcsw = -c delta.side-by-side=true diff --cached
+	dfsw = "!f() { echo git dfsw requires delta 1>&2; }; f"
+	dfcsw = "!f() { echo git dfcsw requires delta 1>&2; }; f"
 
 	glog = log --graph
 	grlog = log --graph --pretty=reference
@@ -19,19 +19,9 @@
 	rlog = log --pretty=reference
 	slog = log --pretty=format:'%C(auto)SHA:     %H %d%nAuthor:  %aN <%aE>%nDate:    %ad%nSubject: %s%n'
 
-	showc = -c delta.side-by-side=true show
+	shows = "!f() { echo git shows requires delta 1>&2; }; f"
 
 	st = status
-
-[core]
-	pager = delta
-
-[delta]
-	navigate = true
-	dark = true
-
-[interactive]
-	diffFilter = delta --color-only
 
 [merge]
 	conflictStyle = diff3
