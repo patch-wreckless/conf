@@ -7,7 +7,7 @@ alias bkv="bindkey -v"
 
 # If EDITOR is set to something containing "vi" then zle will use vim-like
 # keybindings. Ensure it uses the defaults regardless of EDITOR.
-bke
+bindkey -e
 
 setopt INTERACTIVE_COMMENTS
 
